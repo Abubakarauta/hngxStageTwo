@@ -16,7 +16,7 @@ Installation
 
 Detailed instructions on how to install and set up your API. Include steps like:
 1. Clone the repository: 
-git clone https://github.com/yourusername/your-api.git
+git clone https://github.com/Abubakarauta/hngxStageTwo.git
 
 2. Create a virtual environment (optional but recommended):
 python -m venv venv
@@ -40,9 +40,15 @@ API Endpoints
 List and explain the available API endpoints, including their purposes and any required parameters. 
 
 Endpoint		Method				Description
-/api/			GET				Retrieve a list of persons/api/			POST				Create a new person/api/user_id		GET				Retrieve a specific person by ID		
+
+/api/			GET				Retrieve a list of persons
+/api/			POST				Create a new person
+/api/user_id		GET				Retrieve a specific person by ID		
 /api/user_id		PUT                             Update a specific person by ID		
-/api/user_id		DELETE				Delete a specific person
+/api/user_id		DELETE				Delete a specific person
+
+
+
 Examples for retrieving, creating, and updating a person using Postman:
 
 Retrieving a List of All Persons (GET Request)
