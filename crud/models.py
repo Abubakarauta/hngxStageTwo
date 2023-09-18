@@ -1,8 +1,9 @@
 from django.db import models
+from django.utils import timezone
 from django.core.validators import RegexValidator
 
 # Create your models here.
-class person(models.Model):
+class Person(models.Model):
     name = models.CharField(max_length=100, validators= [
         RegexValidator(
             regex= r'^[a-zA-Z\s]*$',
@@ -11,6 +12,8 @@ class person(models.Model):
         ),
     ]
     )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
 
 
